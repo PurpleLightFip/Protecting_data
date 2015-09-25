@@ -80,11 +80,11 @@ namespace FirstLab_DataProtecting
 
                             if (ListOfAccount.Restriction(NewPassword.Password))
                             {
-                                Account NewAccount = new Account();
-                                NewAccount.bName = ListOfAccount.strLogin;
-                                NewAccount.bPassword = NewPassword.Password;
-                                NewAccount.bLock = false;
-                                NewAccount.bRestrictionPassword = bCheck;
+                                Account newAccount = new Account();
+                                newAccount.bName = ListOfAccount.strLogin;
+                                newAccount.bPassword = NewPassword.Password;
+                                newAccount.bLock = false;
+                                newAccount.bRestrictionPassword = bCheck;
                                 ListOfAccount.account[j] = NewAccount;
                                 ListOfAccount.writeFromListToFile();
                                 Error.Content = "Пароль успешно заменен";
@@ -98,11 +98,11 @@ namespace FirstLab_DataProtecting
                         }
                         else
                         {
-                            Account NewAccount = new Account();
-                            NewAccount.bName = ListOfAccount.strLogin;
-                            NewAccount.bPassword = NewPassword.Password;
-                            NewAccount.bLock = false;
-                            NewAccount.bRestrictionPassword = bCheck;
+                            Account newAccount = new Account();
+                            newAccount.bName = ListOfAccount.strLogin;
+                            newAccount.bPassword = NewPassword.Password;
+                            newAccount.bLock = false;
+                            newAccount.bRestrictionPassword = bCheck;
                             ListOfAccount.account[j] = NewAccount;
                             ListOfAccount.writeFromListToFile();
                             Error.Content = "Пароль успешно заменен";

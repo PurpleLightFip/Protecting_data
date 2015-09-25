@@ -32,7 +32,7 @@ namespace FirstLab_DataProtecting
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ButtonClick1(object sender, RoutedEventArgs e)
         {
             Close();
         }
@@ -43,7 +43,7 @@ namespace FirstLab_DataProtecting
             abInfo.Show();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void ButtonClick2(object sender, RoutedEventArgs e)
         {
             ListOfAccount.strLogin = "";
             Account newAccount = new Account();

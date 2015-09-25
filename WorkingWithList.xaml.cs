@@ -28,24 +28,24 @@ namespace FirstLab_DataProtecting
             Account firstAccount = new Account();
             firstAccount = ListOfAccount.account[j];
             
-            PersonalName.Content = firstAccount.bName;
+            personalName.Content = firstAccount.bName;
 
             if (firstAccount.bLock == true)
             {
-                LockPerson.IsChecked = true;
+                lockPerson.IsChecked = true;
             }
             else
             {
-                LockPerson.IsChecked = false;
+                lockPerson.IsChecked = false;
             }
 
             if (firstAccount.bRestrictionPassword == true)
             {
-                RestrictionPassword.IsChecked = true;
+                restrictionPassword.IsChecked = true;
             }
             else
             {
-                RestrictionPassword.IsChecked = false;
+                restrictionPassword.IsChecked = false;
             }
             
         }
@@ -59,8 +59,8 @@ namespace FirstLab_DataProtecting
         private void BackMainWindow_Click(object sender, RoutedEventArgs e)
         {
             ListOfAccount.writeFromListToFile();
-            AdministratorMode amWindow = new AdministratorMode();
-            amWindow.Show();
+            AdministratorMode admWindow = new AdministratorMode();
+            admWindow.Show();
             Close();
         }
 
@@ -75,7 +75,7 @@ namespace FirstLab_DataProtecting
             Account firstAccount = new Account();
             firstAccount = ListOfAccount.account[j];
 
-            if (LockPerson.IsChecked == true)
+            if (lockPerson.IsChecked == true)
             {
                 firstAccount.bLock = true;
             }
@@ -84,7 +84,7 @@ namespace FirstLab_DataProtecting
                 firstAccount.bLock = false;
             }
 
-            if (RestrictionPassword.IsChecked == true)
+            if (restrictionPassword.IsChecked == true)
             {
                 firstAccount.bRestrictionPassword = true;
             }
@@ -97,7 +97,7 @@ namespace FirstLab_DataProtecting
 
         }
 
-        private void PreviousPerson_Click(object sender, RoutedEventArgs e)
+        private void PreviousPersonClick(object sender, RoutedEventArgs e)
         {
 
 
@@ -113,28 +113,28 @@ namespace FirstLab_DataProtecting
             Account firstAccount = new Account();
             firstAccount = ListOfAccount.account[j];
 
-            PersonalName.Content = firstAccount.bName;
+            personalName.Content = firstAccount.bName;
 
             if (firstAccount.bLock == true)
             {
-                LockPerson.IsChecked = true;
+                lockPerson.IsChecked = true;
             }
             else
             {
-                LockPerson.IsChecked = false;
+                lockPerson.IsChecked = false;
             }
 
             if (firstAccount.bRestrictionPassword == true)
             {
-                RestrictionPassword.IsChecked = true;
+                restrictionPassword.IsChecked = true;
             }
             else
             {
-                RestrictionPassword.IsChecked = false;
+                restrictionPassword.IsChecked = false;
             }
         }
 
-        private void NextPerson_Click(object sender, RoutedEventArgs e)
+        private void NextPersonClick(object sender, RoutedEventArgs e)
         {
             
             if (j != ListOfAccount.Count() - 1)
@@ -149,30 +149,25 @@ namespace FirstLab_DataProtecting
             Account firstAccount = new Account();
             firstAccount = ListOfAccount.account[j];
 
-            PersonalName.Content = firstAccount.bName;
+            personalName.Content = firstAccount.bName;
 
             if (firstAccount.bLock == true)
             {
-                LockPerson.IsChecked = true;
+                lockPerson.IsChecked = true;
             }
             else
             {
-                LockPerson.IsChecked = false;
+                lockPerson.IsChecked = false;
             }
 
             if (firstAccount.bRestrictionPassword == true)
             {
-                RestrictionPassword.IsChecked = true;
+                restrictionPassword.IsChecked = true;
             }
             else
             {
-                RestrictionPassword.IsChecked = false;
+                restrictionPassword.IsChecked = false;
             }
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
