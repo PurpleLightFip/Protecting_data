@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace FirstLab_DataProtecting
+namespace DataProtecting
 {
     /// <summary>
     /// Логика взаимодействия для WorkingWithList.xaml

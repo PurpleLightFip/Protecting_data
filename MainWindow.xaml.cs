@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 
-namespace FirstLab_DataProtecting
+namespace DataProtecting
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
